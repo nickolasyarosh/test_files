@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>New page</title>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="section_menu">
+            <div class="nav-toggle_but">
+                <div class="wrapper">
+                    <div class="Line1_click _1 line"></div>
+                    <div class="_2 line line2_click"></div>
+                    <div class="_3 line line3_click"></div>
+                </div>
+                <div class="bg_shape pg-empty-placeholder"></div>
+            </div>
+        </div>
+        <script>
+        document.querySelector('.nav-toggle_but').addEventListener('click', function(e) {
+[].map.call(document.querySelectorAll('.wrapper'), function(el) {
+    
+el.classList.toggle('wrapper_close');
+  });
+});
+        </script>
+    </body>
+</html>
